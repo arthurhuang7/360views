@@ -3,13 +3,20 @@
   <head>
     <meta charset=UTF-8 />
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <style>
+      body{
+        permissions-policy: interest-cohort=();
+      }
+    </style>
   </head>
   <body>
     <script src="js/three.min.js"></script>
     <script src="js/GLTFLoader.js"></script>
     <script src="js/FBXLoader.js"></script>
     <script src="js/OrbitControls.js"></script>
+    
     <script>
+      
       let scene, camera, renderer;
 
       function init() {
